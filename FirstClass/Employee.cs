@@ -12,11 +12,21 @@ namespace FirstClass
         public int empid, empsalary;
         public string empname;
 
-        public void EmployeeData(int id, string name, int salary)
+        
+        
+        //public void EmployeeData(int id, string name, int salary)
+       public Employee()//Non parametric Constructor
         {
-            empid = id;
-            empname = name;
-            empsalary = salary;
+            empid = 101;
+            empname = "Pallavi Bhong";
+            empsalary = 75000;
+        }
+
+        public Employee(int id, string name, int salary)//parametric constructor
+        {
+            empid=id;
+            empname=name;
+            empsalary=salary;
         }
 
         public string PrintData()
@@ -24,20 +34,20 @@ namespace FirstClass
             return $"Employee Id: {empid}\nEmployee Name: {empname}\nEmployee salary: {empsalary}\n";
         }
 
-        public int GetEmployeeid()
-        {
-            return empid;
-        }
+        //public int GetEmployeeid()
+        //{
+        //    return empid;
+        //}
 
-        public string GetEmployeeName()
-        {
-            return empname;
-        }
+        //public string GetEmployeeName()
+        //{
+        //    return empname;
+        //}
 
-        public double GetEmployeeSalary()
-        {
-            return empsalary;
-        }
+        //public double GetEmployeeSalary()
+        //{
+        //    return empsalary;
+        //}
 
 
 

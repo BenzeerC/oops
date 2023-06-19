@@ -15,10 +15,21 @@ namespace FirstClass
         public double percentage;
 
 
-        public void StudentData(int id, string name, float per)
-        { studentid = id;
-          studentname = name;
-          percentage = per;
+        //public void StudentData(int id, string name, float per)//Methood
+        public Student()//Non parametric Constructor
+
+        {
+            studentid = 11;
+          studentname = "Arsh Chaus";
+          percentage = 99.1;
+        }
+
+        public Student(int id, string name, float per)// parametric Constructor
+        {
+            studentid = id;
+            studentname = name;
+            percentage = per;
+            
         }
 
         public string PrintData()
@@ -26,20 +37,20 @@ namespace FirstClass
             return $"Student Id: {studentid},\nStudent Name: {studentname},\nPercentages: {percentage}\n";
         }
 
-        public int GetStudentid()
-        {
-             return studentid;
-        }
+        //public int GetStudentid()
+        //{
+        //     return studentid;
+        //}
 
-        public string GetStudentName()
-        { 
-            return studentname; 
-        }
+        //public string GetStudentName()
+        //{ 
+        //    return studentname; 
+        //}
 
-        public double GetPercentage()
-        {
-            return percentage;
-        }
+        //public double GetPercentage()
+        //{
+        //    return percentage;
+        //}
 
     }
 }

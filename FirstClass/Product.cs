@@ -14,7 +14,15 @@ namespace FirstClass
         public string productname;
         public int productprice;
 
-        public void ProductData(int id, string name, int price)
+        //public void ProductData(int id, string name, int price)//Method
+        public Product()//Non parametric Constructor
+        {
+            productcode = 5698745;
+            productname = "Mobile";
+            productprice = 45000;
+        }
+
+        public Product(int id, string name, int price)
         {
             productcode = id;
             productname = name;
@@ -26,20 +34,20 @@ namespace FirstClass
             return $"Product code: {productcode}\nProduct Name: {productname}\nProduct Price: {productprice}\n";
         }
 
-        public int GetProductcode()
-        {
-            return productcode;
-        }
+        //public int GetProductcode()
+        //{
+        //    return productcode;
+        //}
 
-        public string GetProductNmae()
-        {
-            return productname;
-        }
+        //public string GetProductNmae()
+        //{
+        //    return productname;
+        //}
 
-        public double GetProductPrice()
-        {
-            return productprice;
-        }
+        //public double GetProductPrice()
+        //{
+        //    return productprice;
+        //}
 
 
 
